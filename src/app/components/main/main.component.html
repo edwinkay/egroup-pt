@@ -1,0 +1,47 @@
+<div class="container">
+  <h1 class="titulo">Texto de Bienvenida</h1>
+  <div class="contenido">
+    <img
+      [src]="comic.thumbnail.path + '/standard_medium.' + comic.thumbnail.extension" alt="Comic Image"
+      alt="Imagen"
+      class="imagen"
+    />
+    <p class="parrafo">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <button style="cursor: pointer;" routerLink="/empresa" class="boton">Ver más</button>
+</div>
+<hr class="hr1" />
+<div class="container2">
+  <h1 class="titulo2">(Productos principales)</h1>
+  <div class="productos">
+    <ng-container *ngFor="let char of characters; let i = index">
+      <div class="column producto" *ngIf="i < 3">
+        <img
+          [src]="
+            char.thumbnail.path + '/standard_medium.' + char.thumbnail.extension
+          "
+          alt="Imagen"
+        />
+        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur id voluptatum minus facilis illum, voluptatibus velit tenetur esse. Assumenda voluptates exercitationem unde minus dolores dolorem tenetur aliquid ea quia!</p>
+      </div>
+    </ng-container>
+  </div>
+  <div class="boton-container">
+    <button style="cursor: pointer;" routerLink="/productos" class="boton2">Ver más</button>
+  </div>
+</div>
+<hr class="hr2" />
+<div style="margin-top: 25px">
+  <app-contacto></app-contacto>
+</div>

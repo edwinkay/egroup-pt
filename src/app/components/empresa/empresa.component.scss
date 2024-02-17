@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+}
+
+.titulo {
+  margin-bottom: 20px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen-container {
+  margin: 0 10px;
+  max-width: 300px;
+}
+
+.imagen-container img{
+  width: 100%;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #666;
+}

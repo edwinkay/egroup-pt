@@ -1,0 +1,26 @@
+<div class="navbar">
+  <div class="brand">
+    <h2 routerLink="home" style="cursor: pointer;">Marvel</h2>
+  </div>
+  <div class="brand2">
+    <span>Empanadas a mil <br>Contacto: 3017757343</span>
+  </div>
+  <div>
+      <div class="menu-icon" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="menu-container">
+    <div class="menu-items" [ngClass]="{ 'open': isMenuOpen }">
+      <a routerLink="home">Home</a>
+      <a routerLink="empresa">Bendita Empresa</a>
+      <a routerLink="productos">Bendita Empanada</a>
+      <a routerLink="contacto">Contacto</a>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+

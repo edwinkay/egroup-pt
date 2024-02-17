@@ -1,0 +1,12 @@
+<h1 style="text-align: center;">Productos</h1>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let char of characters," class="column">
+      <div class="image">
+        <img [src]="char.thumbnail.path + '/standard_medium.' + char.thumbnail.extension" alt="Imagen">
+      </div>
+    </div>
+  </div>
+</div>
+

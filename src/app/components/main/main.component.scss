@@ -1,0 +1,104 @@
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Agregar flex-wrap para que los elementos se ajusten en dispositivos pequeños */
+  }
+
+  .imagen {
+    height: 157px;
+    width: 363px;
+    margin-right: 30px;
+  }
+
+  .parrafo {
+    flex: 1;
+    margin: 0;
+    border: 1px solid;
+    padding: 8px;
+  }
+
+  .boton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .container2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .titulo2 {
+    margin-bottom: 20px;
+  }
+
+  .productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agregar flex-wrap para que los elementos se ajusten en dispositivos pequeños */
+  }
+
+  .producto {
+    flex-basis: calc(33.33% - 20px); /* Ajustar según el espacio que quieras entre las imágenes */
+    margin-bottom: 20px;
+  }
+
+  .producto img {
+    max-width: 100%; /* Hacer que las imágenes sean responsivas */
+    height: auto; /* Hacer que las imágenes conserven su aspecto */
+  }
+
+  .descripcion {
+    margin-bottom: 10px;
+  }
+
+  .boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
+
+  hr {
+    border: 1px solid black;
+  }
+
+  .hr1 {
+    margin-top: 27px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+    align-items: center;
+  }
+    .imagen {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .productos .producto {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .imagen {
+      min-width: 400px; /* Establecer un ancho mínimo para la imagen */
+    }
+  }

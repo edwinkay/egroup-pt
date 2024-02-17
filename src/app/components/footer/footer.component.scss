@@ -1,0 +1,44 @@
+.container {
+  margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.iconos,
+.redes-sociales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.iconos img,
+.redes-sociales img {
+  width: 30px;
+  height: auto;
+  margin: 5px; /* Espacio entre las imágenes */
+}
+
+.mapa {
+  width: 170px;
+  height: auto;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+.texto input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  max-width: 300px; /* Ancho máximo en pantallas grandes */
+  box-sizing: border-box; /* Incluir el relleno y el borde en el ancho */
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: auto;
+  margin: 5px; /* Espacio entre las imágenes */
+}

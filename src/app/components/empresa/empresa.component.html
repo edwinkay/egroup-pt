@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="titulo">Empresa</h1>
+    <div class="imagenes">
+        <ng-container *ngFor="let crea of creators; let i = index">
+            <div *ngIf="i >= 1 && i <= 3" class="imagen-container">
+                <img  [src]="crea.thumbnail.path + '/standard_medium.' + crea.thumbnail.extension" alt="Imagen">
+                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non aliquet sapien, vel euismod nunc.</p>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
